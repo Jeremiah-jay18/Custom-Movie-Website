@@ -550,6 +550,7 @@ h3{
     }
     .header .nav #menu{
         font-size:2.5rem;
+        cursor:pointer;
     }
     .home-wrap{
         margin:0rem 0rem 0 0;
