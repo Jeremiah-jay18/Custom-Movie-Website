@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f9d25622f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profile.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="row">
+        <div class="image-container">
+            <h2 class="heading">Edit Your Profile</h2>
+            <label for ="image-input" title="select a photo" class="material-icons">add_a_photo
+            <input onchange="previewFile()"type="file" id="image-input" accept="image/png,image/jpeg, image/jpg,image/webp"> 
+            <div id="display-image"></div>
+            
+        </label>
+        </div>
+            <form action="">
+                <div class="input-box">
+                    <span class="material-icons">person</span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="input-box">
+                    <span class="material-icons">email</span>
+                    <input type="email" placeholder="email">
+                </div>
+                <span>Optional</span>
+                <div class="input-box">
+                    <span class="material-icons">phone</span>
+                    <input type="phone" placeholder="phone / format: +'country-code'123-456-789">
+                </div>
+                <div class="btn-wrap">
+                <button type="submit" id="save">Save</button>
+                <button type="submit" id="cancel">Cancel</button>
+           </div>
+           <a href="movie.html"><span class="material-icons">keyboard_return</span>Back To Home Page</a>
+            </form>
+            </div>
+            
+            
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
